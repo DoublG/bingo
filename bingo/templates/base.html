@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}{% endblock %} - Bingo</title>
+    {{ vite_tags()|safe }}
+  </head>
+  <body>
+    <section class="content">{% block content %}{% endblock %}</section>
+  </body>
+</html>
