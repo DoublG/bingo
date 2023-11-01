@@ -11,3 +11,18 @@ import "@ui5/webcomponents-fiori/dist/Bar.js";
 import "@ui5/webcomponents-fiori/dist/ShellBar";
 import "@ui5/webcomponents/dist/Input.js";
 import "@ui5/webcomponents/dist/Avatar.js";
+
+import "@ui5/webcomponents/dist/features/InputElementsFormSupport.js";
+
+import "@ui5/webcomponents/dist/Table.js";
+import "@ui5/webcomponents/dist/TableColumn.js";
+import "@ui5/webcomponents/dist/TableRow.js";
+import "@ui5/webcomponents/dist/TableCell.js";
+
+import "@ui5/webcomponents-fiori/dist/Bar.js";
+
+import "@ui5/webcomponents/dist/Card";
+import "@ui5/webcomponents/dist/CardHeader.js";
+
+import "@ui5/webcomponents-fiori/dist/Page.js";
+

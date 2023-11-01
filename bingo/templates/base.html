@@ -4,7 +4,17 @@
     <title>{% block title %}{% endblock %} - Bingo</title>
     {{ vite_tags()|safe }}
   </head>
-  <body>
-    <section class="content">{% block content %}{% endblock %}</section>
+  <body xmlns="http://www.w3.org/1999/xhtml">
+    <ui5-page style="height: 500px">
+      <form method="post">
+        <ui5-bar design="Header" data-sap-ui-fastnavgroup="true" slot="header">
+          <ui5-label id="basic-label">SAP Bingo Words</ui5-label>
+          <ui5-button submits="true" slot="startContent"
+            >Generate Bingo</ui5-button
+          >
+        </ui5-bar>
+      </form>
+      <div>{% block content %}{% endblock %}</div>
+    </ui5-page>
   </body>
 </html>

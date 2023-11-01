@@ -1,0 +1,9 @@
+{% extends 'base.html' %} {% block content %}
+<div class="grid-container">
+  {% for word in words %}
+  <ui5-card>
+    <ui5-card-header slot="header" title-text="{{ word }}"></ui5-card-header>
+  </ui5-card>
+  {% endfor %}
+</div>
+{% endblock %}

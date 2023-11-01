@@ -1,5 +1,23 @@
-{% extends 'base.html' %}
-{% block content %}
-<ui5-button accessible-name="Generate Bingo"> Generate Bingo </ui5-button>
-{% endblock %}
+{% extends 'base.html' %} {% block content %}
 
+<ui5-table id="table" data-sap-ui-fastnavgroup="true">
+  {% for word in words %}
+  <ui5-table-row>
+    <ui5-table-cell>
+      <span>{{word.count}}</span>
+    </ui5-table-cell>
+    <ui5-table-cell>
+        <span>{{word.words|join(', ')}}</span>
+      </ui5-table-cell>
+  </ui5-table-row>
+  {% endfor %}
+
+  <ui5-table-column slot="columns" popin-display="Inline">
+    <span>Frequency</span>
+  </ui5-table-column>
+  <ui5-table-column slot="columns" popin-display="Inline">
+    <span>Word</span>
+  </ui5-table-column>
+</ui5-table>
+
+{% endblock %}
