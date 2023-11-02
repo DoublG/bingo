@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "@ui5/webcomponents": "^1.18.0",
-    "@ui5/webcomponents-fiori": "^1.18.0"
+    "@ui5/webcomponents-fiori": "^1.18.0",
+    "@ui5/webcomponents-icons": "^1.18.0"
   }
 }

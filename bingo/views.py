@@ -24,7 +24,6 @@ def get_distribution():
 
 @main.route('/', methods=('GET', 'POST'))
 def index():
-    print(current_app.config)
     if request.method == 'POST':
         return random(5)
     else:
@@ -44,10 +43,7 @@ def random(k):
     
     division = max(weights)
     norm_weights = [(division - float(i))/division for i in weights]
-    print(norm_weights)
-
     words = choices(values, weights=norm_weights, k = k)
-    print(words)
 
     return render_template('bingo.html', words=words)
  

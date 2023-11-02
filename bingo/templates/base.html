@@ -9,7 +9,10 @@
       <form method="post">
         <ui5-bar design="Header" data-sap-ui-fastnavgroup="true" slot="header">
           <ui5-label id="basic-label">SAP Bingo Words</ui5-label>
-          <ui5-button submits="true" slot="startContent"
+          <ui5-link href="/" slot="startContent">
+            Home
+          </ui5-link>
+          <ui5-button submits="true" slot="startContent" value="generate"
             >Generate Bingo</ui5-button
           >
         </ui5-bar>

@@ -25,4 +25,6 @@ import "@ui5/webcomponents/dist/Card";
 import "@ui5/webcomponents/dist/CardHeader.js";
 
 import "@ui5/webcomponents-fiori/dist/Page.js";
+import "@ui5/webcomponents-icons/dist/home.js";
 
+import "@ui5/webcomponents/dist/Link";
