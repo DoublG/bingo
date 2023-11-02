@@ -295,3 +295,4 @@ mta_archives/**
 *.mtar
 
 node_modules/**
+mta_archives
