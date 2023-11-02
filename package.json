@@ -1,0 +1,11 @@
+{
+    "name": "build-tooling",
+    "version": "0.0.1",
+    "description": "Scaffolding for build",
+    "scripts": {
+      "install": "npm --prefix backend/vite run build && poetry export --without-hashes --directory backend --format=requirements.txt > backend/requirements.txt"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT"
+  }

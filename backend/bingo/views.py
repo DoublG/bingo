@@ -5,11 +5,13 @@ from nltk.corpus import stopwords
 import nltk
 from collections import defaultdict
 from random import choices
+import os
 
 main = Blueprint('main', __name__,)
 
 def get_distribution():
-    with open('data/sessions.json', 'r') as f:
+    dirname = os.path.dirname(__file__)
+    with open(os.path.join(dirname, '../data/sessions.json'), 'r',encoding="utf8") as f:
         data = json.load(f)
         complete_list = []
         for i in data.get('sectionList'):

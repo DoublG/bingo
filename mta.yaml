@@ -1,0 +1,15 @@
+_schema-version: "3.2"
+ID: bingo
+version: 0.0.1
+
+build-parameters:
+  before-all:
+    - builder: npm
+
+modules:
+  - name: bingo_generator
+    type: python
+    path: backend
+    build-parameters:
+      ignore: ["vite/node_modules", ".venv"]
+
